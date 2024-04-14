@@ -1,0 +1,149 @@
+
+:root {
+    --blanc: #dedede;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.arau {
+    font-family: 'Poppins', sans-serif;
+    font-size: 8px;
+    color: var(--blanc);
+    margin-left: 10px;
+    margin-top: 10px;
+    position: fixed;
+    top: 10px;
+    left: 15px;
+}
+
+.gmail {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--blanc);
+    margin-right: 10px;
+    margin-top: 10px;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+}
+
+.arau:hover {
+    cursor: pointer;
+}
+
+.cos .logo img {
+    width: 500px;
+    color: var(--blanc);
+}
+
+.cos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cos .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.cos .links a {
+    text-transform: uppercase;
+    margin: 10px;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--blanc);
+    padding-bottom: 0.75rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: var(--blanc);
+    transition: all 0.3s ease;
+}
+
+.cos .links a:hover {
+    color: rgb(251, 226, 5);
+}
+
+.links a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--blanc);
+    margin-top: -10px;
+    transition: all 0.3s ease;
+}
+
+.links a:hover::after {
+    width: 100%;
+}
+
+.cul .instagram a {
+    font-family: 'Poppins', sans-serif;
+    color: var(--blanc);
+    font-size: 28px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    position: fixed;
+    bottom: 10px;
+    left: 15px;
+    transition: all 0.3s ease;
+}
+
+.cul .instagram a:hover{
+    color: #f1758e;
+}
+
+.posters {
+    padding-top: 4500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.posters img {
+    width: 50%; /* Ocupar el 50% del ancho */
+    height: auto; /* Mantener la proporción */
+    display: block;
+}
+
+.footer {
+    color: var(--blanc);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: bold; /* Hace que el texto esté en negrita */
+}
